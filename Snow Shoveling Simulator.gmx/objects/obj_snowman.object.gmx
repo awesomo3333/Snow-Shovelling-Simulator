@@ -69,7 +69,7 @@ scr_BasicCollision_init(1);
 range = 160
 
 firing = false;
-rateOfFire = 10;
+rateOfFire = room_speed * 1;
 cooldown = 0;
 cooldownTime = 1;
 clipsize = 10;
@@ -204,27 +204,59 @@ if (myHealth &lt;= 0){
             <kind>1</kind>
             <string>///Shooting Snowballs
 
-//this is like the left pressed event on the player
-if (distance_to_object(obj_player) &lt; range) {
+//So that snowmen only shoot if we want them to
+if(global.shootingsnowmen = true){     //Set global.shooting in room creation code
 
-    //this is like the code inside the event on the player
-    if(!firing){
-    firing = true;   
-    instance_create(x, y, obj_snowball);
-    cooldown += 1;
+    //this is like the left pressed event on the player
+    if (distance_to_object(obj_player) &lt; range) {
     
-    if (cooldown &gt;= clipsize){
-        alarm[1]=cooldownTime;
-        cooldown = 0;
-    }
-    else {
-    alarm[1]=rateOfFire;
-    }
+        //this is like the code inside the event on the player
+        if(!firing){
+        firing = true;   
+        instance_create(x, y, obj_snowball);
+        cooldown += 1;
+        
+        if (cooldown &gt;= clipsize){
+            alarm[1]=cooldownTime;
+            cooldown = 0;
+        }
+        else {
+        alarm[1]=rateOfFire;
+        }
+        
+        }
+    
     
     }
-
 
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_snowman">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//move_bounce_all(false);
+//collide = true
+
+//basic collision thingy
+scr_BasicCollision();
 </string>
           </argument>
         </arguments>
@@ -304,33 +336,6 @@ if (global.murder = true){
           <argument>
             <kind>4</kind>
             <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_snowman">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//move_bounce_all(false);
-//collide = true
-
-//basic collision thingy
-scr_BasicCollision();
-</string>
           </argument>
         </arguments>
       </action>
