@@ -35,6 +35,9 @@ cooldown = 0;
 //cooldownTime = 100;
 cooldownTime = 1;
 clipsize = 6;
+
+//test for github thingy
+
 </string>
           </argument>
         </arguments>
