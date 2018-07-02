@@ -25,16 +25,45 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//variables
+            <string>///Initiate
+//variables
 health = 100;
-spd = 5;
-imgspd = .5;
+spd_normal = 5;
+spd_powerup = 10;
+spd = spd_normal;
+imgspd_normal = .5;
+imgspd_powerup = 0;
+imgspd = imgspd_normal;
 firing = false;
 rateOfFire = 10;
 cooldown = 0;
 //cooldownTime = 100;
 cooldownTime = 1;
 clipsize = 6;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spd = spd_normal;
+
 </string>
           </argument>
         </arguments>
@@ -58,6 +87,7 @@ clipsize = 6;
           <argument>
             <kind>1</kind>
             <string>firing = false;
+
 </string>
           </argument>
         </arguments>
