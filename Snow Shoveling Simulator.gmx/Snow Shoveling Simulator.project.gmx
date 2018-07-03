@@ -109,7 +109,9 @@
       <object>objects\obj_splashFADEOUT</object>
       <object>objects\obj_splashFADEIN</object>
     </objects>
-    <object>objects\obj_powerup</object>
+    <objects name="obj_powerups">
+      <object>objects\obj_powerup</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splashscreen</room>

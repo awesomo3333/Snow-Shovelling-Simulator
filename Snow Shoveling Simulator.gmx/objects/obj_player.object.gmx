@@ -66,7 +66,57 @@ clipsize = 6;
           <argument>
             <kind>1</kind>
             <string>spd = spd_normal;
+if(spd = spd_normal)
+{
+/// Local Variables
+var d = keyboard_check(ord('D'));
+var a = keyboard_check(ord('A'));
+var s = keyboard_check(ord('S'));
+var w = keyboard_check(ord('W'));
 
+/// Move Right
+if (d){
+    x += spd;
+    
+    sprite_index = spr_player_right;
+    image_speed = imgspd;
+}
+
+/// Move Left
+if (a) {
+   
+   x -= spd;
+    
+   sprite_index = spr_player_left;
+   image_speed = imgspd;
+   
+}
+
+/// Move Down
+if (s) {
+    
+   y += spd;
+   
+   sprite_index = spr_player_down;
+   image_speed = imgspd;
+    
+}
+
+/// Move Up
+if (w) {
+    
+    y -= spd;
+    
+    sprite_index = spr_player_up;
+    image_speed = imgspd;
+    
+}
+//Stop walking when stopped
+if ( !w &amp;&amp; !s &amp;&amp; !a &amp;&amp; !d) {
+    image_index = 0;
+    image_speed = 0;
+}
+}
 </string>
           </argument>
         </arguments>
@@ -121,7 +171,6 @@ var a = keyboard_check(ord('A'));
 var s = keyboard_check(ord('S'));
 var w = keyboard_check(ord('W'));
 
-
 /// Move Right
 if (d){
     x += spd;
@@ -164,7 +213,6 @@ if ( !w &amp;&amp; !s &amp;&amp; !a &amp;&amp; !d) {
     image_index = 0;
     image_speed = 0;
 }
-
 //Keep Within Room
 x=clamp(x, 0, room_width);
 y=clamp(y, 0, room_height);
