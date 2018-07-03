@@ -25,10 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//variables
+            <string>///Initiate
+//variables
 health = 100;
-spd = 5;
-imgspd = .5;
+spd_normal = 5;
+spd_powerup = 10;
+spd = spd_normal;
+imgspd_normal = .5;
+imgspd_powerup = 0;
+imgspd = imgspd_normal;
 firing = false;
 rateOfFire = 10;
 cooldown = 0;
@@ -43,7 +48,7 @@ clipsize = 6;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -60,37 +65,14 @@ clipsize = 6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>firing = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Movement
-
+            <string>spd = spd_normal;
+if(spd = spd_normal)
+{
 /// Local Variables
 var d = keyboard_check(ord('D'));
 var a = keyboard_check(ord('A'));
 var s = keyboard_check(ord('S'));
 var w = keyboard_check(ord('W'));
-
 
 /// Move Right
 if (d){
@@ -134,7 +116,103 @@ if ( !w &amp;&amp; !s &amp;&amp; !a &amp;&amp; !d) {
     image_index = 0;
     image_speed = 0;
 }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>firing = false;
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Movement
+
+/// Local Variables
+var d = keyboard_check(ord('D'));
+var a = keyboard_check(ord('A'));
+var s = keyboard_check(ord('S'));
+var w = keyboard_check(ord('W'));
+
+/// Move Right
+if (d){
+    x += spd;
+    
+    sprite_index = spr_player_right;
+    image_speed = imgspd;
+}
+
+/// Move Left
+if (a) {
+   
+   x -= spd;
+    
+   sprite_index = spr_player_left;
+   image_speed = imgspd;
+   
+}
+
+/// Move Down
+if (s) {
+    
+   y += spd;
+   
+   sprite_index = spr_player_down;
+   image_speed = imgspd;
+    
+}
+
+/// Move Up
+if (w) {
+    
+    y -= spd;
+    
+    sprite_index = spr_player_up;
+    image_speed = imgspd;
+    
+}
+//Stop walking when stopped
+if ( !w &amp;&amp; !s &amp;&amp; !a &amp;&amp; !d) {
+    image_index = 0;
+    image_speed = 0;
+}
 //Keep Within Room
 x=clamp(x, 0, room_width);
 y=clamp(y, 0, room_height);
