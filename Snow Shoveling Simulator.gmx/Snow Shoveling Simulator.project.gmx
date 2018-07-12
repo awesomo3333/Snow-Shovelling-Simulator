@@ -46,6 +46,8 @@
     </sprites>
     <sprites name="Powerups">
       <sprite>sprites\spr_speed</sprite>
+      <sprite>sprites\spr_superthrow</sprite>
+      <sprite>sprites\spr_lemonade</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
