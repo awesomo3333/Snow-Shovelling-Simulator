@@ -14,6 +14,12 @@
       <sprite>sprites\spr_player_up</sprite>
       <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_left</sprite>
+      <sprites name="spr_speedboost">
+        <sprite>sprites\spr_player_up_spd</sprite>
+        <sprite>sprites\spr_player_down_spd</sprite>
+        <sprite>sprites\spr_player_right_spd</sprite>
+        <sprite>sprites\spr_player_left_spd</sprite>
+      </sprites>
     </sprites>
     <sprites name="Player Weapons">
       <sprite>sprites\spr_meatball</sprite>
@@ -45,6 +51,11 @@
       <sprites name="BigSnow">
         <sprite>sprites\spr_BigSnow_Spawn</sprite>
       </sprites>
+	</sprites>
+    <sprites name="Powerups">
+      <sprite>sprites\spr_speed</sprite>
+      <sprite>sprites\spr_superthrow</sprite>
+      <sprite>sprites\spr_lemonade</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -113,6 +124,9 @@
         <object>objects\obj_snowball</object>
         <object>objects\obj_deadsnowball</object>
       </objects>
+	</objects>
+    <objects name="obj_powerups">
+      <object>objects\obj_powerup</object>
     </objects>
   </objects>
   <rooms name="rooms">
