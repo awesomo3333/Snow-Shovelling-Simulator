@@ -147,6 +147,7 @@
     <room>rooms\rm_splashscreen</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_levelSelect</room>
+    <room>rooms\rm_lvl_1</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_tempwin</room>
