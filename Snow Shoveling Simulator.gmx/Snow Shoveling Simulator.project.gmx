@@ -47,15 +47,22 @@
       <sprite>sprites\spr_snowman</sprite>
       <sprites name="Enemy Weapons">
         <sprite>sprites\spr_snowball</sprite>
+        <sprites name="BigSnowsSprites">
+          <sprite>sprites\spr_BSspike1</sprite>
+          <sprite>sprites\spr_BSspike2</sprite>
+        </sprites>
       </sprites>
       <sprites name="BigSnow">
-        <sprite>sprites\spr_BigSnow_Spawn</sprite>
+        <sprite>sprites\spr_BigSnow</sprite>
       </sprites>
-	</sprites>
+    </sprites>
     <sprites name="Powerups">
       <sprite>sprites\spr_speed</sprite>
       <sprite>sprites\spr_superthrow</sprite>
       <sprite>sprites\spr_lemonade</sprite>
+    </sprites>
+    <sprites name="Sprites to use in eastereggs">
+      <sprite>sprites\spr_sticky</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -123,8 +130,15 @@
       <objects name="Enemy Weapons">
         <object>objects\obj_snowball</object>
         <object>objects\obj_deadsnowball</object>
+        <objects name="Big Snows Spikes">
+          <object>objects\obj_BSspike1</object>
+          <object>objects\obj_BSspike2</object>
+        </objects>
       </objects>
-	</objects>
+      <objects name="BigSnow">
+        <object>objects\obj_BigSnow</object>
+      </objects>
+    </objects>
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
     </objects>
@@ -134,7 +148,6 @@
     <room>rooms\rm_main</room>
     <room>rooms\rm_levelSelect</room>
     <room>rooms\rm_options</room>
-    <room>rooms\rm_lvl_1</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_tempwin</room>
     <room>rooms\rm_snowFight</room>
