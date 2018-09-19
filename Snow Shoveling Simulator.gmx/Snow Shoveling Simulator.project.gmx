@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\snd_background_blizzard</sound>
     <sound>sound\snd_snowcrunch</sound>
+    <sound>sound\snd_SpikeCreation</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -50,6 +51,7 @@
         <sprites name="BigSnowsSprites">
           <sprite>sprites\spr_BSspike1</sprite>
           <sprite>sprites\spr_BSspike2</sprite>
+          <sprite>sprites\spr_BSspike3</sprite>
         </sprites>
       </sprites>
       <sprites name="BigSnow">
@@ -133,6 +135,7 @@
         <objects name="Big Snows Spikes">
           <object>objects\obj_BSspike1</object>
           <object>objects\obj_BSspike2</object>
+          <object>objects\obj_BSspike3</object>
         </objects>
       </objects>
       <objects name="BigSnow">

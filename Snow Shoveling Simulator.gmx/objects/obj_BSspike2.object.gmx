@@ -30,7 +30,31 @@ depth = -y
 
 alarm[0] = 90
 
-alarm[1] = 15
+alarm[1] = 6
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Play Sound
+audio_play_sound(snd_SpikeCreation, 0, false);
+audio_sound_pitch(snd_SpikeCreation, 0.8 + random(0.5));
+audio_sound_gain(snd_SpikeCreation, global.volume, 0);
 </string>
           </argument>
         </arguments>
@@ -66,7 +90,7 @@ midx = round(divx / 2);
 midy = round(divy / 2);
         
 //Creating spike at midpoint
-instance_create(midx, midy, obj_BSspike2);
+instance_create(midx, midy, obj_BSspike3);
         
 </string>
           </argument>
