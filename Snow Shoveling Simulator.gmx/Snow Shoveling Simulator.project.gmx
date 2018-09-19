@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\snd_background_blizzard</sound>
     <sound>sound\snd_snowcrunch</sound>
+    <sound>sound\snd_SpikeCreation</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -26,7 +27,6 @@
     </sprites>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_snow</sprite>
-    <sprite>sprites\spr_snowman</sprite>
     <sprites name="MainMenu">
       <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_GN</sprite>
@@ -44,10 +44,27 @@
     <sprites name="LevelSelect">
       <sprite>sprites\spr_lvl1</sprite>
     </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_snowman</sprite>
+      <sprites name="Enemy Weapons">
+        <sprite>sprites\spr_snowball</sprite>
+        <sprites name="BigSnowsSprites">
+          <sprite>sprites\spr_BSspike1</sprite>
+          <sprite>sprites\spr_BSspike2</sprite>
+          <sprite>sprites\spr_BSspike3</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="BigSnow">
+        <sprite>sprites\spr_BigSnow</sprite>
+      </sprites>
+    </sprites>
     <sprites name="Powerups">
       <sprite>sprites\spr_speed</sprite>
       <sprite>sprites\spr_superthrow</sprite>
       <sprite>sprites\spr_lemonade</sprite>
+    </sprites>
+    <sprites name="Sprites to use in eastereggs">
+      <sprite>sprites\spr_sticky</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -70,14 +87,13 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_snow</object>
-    <object>objects\obj_snowman</object>
     <objects name="Player">
       <object>objects\obj_player</object>
       <object>objects\obj_playerstats</object>
-    </objects>
-    <objects name="Player Weapons">
-      <object>objects\obj_meatball</object>
-      <object>objects\obj_deadmeatball</object>
+      <objects name="Player Weapons">
+        <object>objects\obj_meatball</object>
+        <object>objects\obj_deadmeatball</object>
+      </objects>
     </objects>
     <objects name="MainMenu">
       <object>objects\obj_play</object>
@@ -111,6 +127,21 @@
       <object>objects\obj_splashFADEOUT</object>
       <object>objects\obj_splashFADEIN</object>
     </objects>
+    <objects name="Enemies">
+      <object>objects\obj_snowman</object>
+      <objects name="Enemy Weapons">
+        <object>objects\obj_snowball</object>
+        <object>objects\obj_deadsnowball</object>
+        <objects name="Big Snows Spikes">
+          <object>objects\obj_BSspike1</object>
+          <object>objects\obj_BSspike2</object>
+          <object>objects\obj_BSspike3</object>
+        </objects>
+      </objects>
+      <objects name="BigSnow">
+        <object>objects\obj_BigSnow</object>
+      </objects>
+    </objects>
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
     </objects>
@@ -119,8 +150,8 @@
     <room>rooms\rm_splashscreen</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_levelSelect</room>
-    <room>rooms\rm_options</room>
     <room>rooms\rm_lvl_1</room>
+    <room>rooms\rm_options</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_tempwin</room>
     <room>rooms\rm_snowFight</room>
