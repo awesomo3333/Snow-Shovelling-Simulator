@@ -56,6 +56,10 @@
       </sprites>
       <sprites name="BigSnow">
         <sprite>sprites\spr_BigSnow</sprite>
+        <sprite>sprites\spr_minisnow</sprite>
+      </sprites>
+      <sprites name="The Abomidable">
+        <sprite>sprites\spr_abomidable</sprite>
       </sprites>
     </sprites>
     <sprites name="Powerups">
