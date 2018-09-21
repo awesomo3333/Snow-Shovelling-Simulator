@@ -38,10 +38,9 @@ firing = false;
 rateOfFire = 10;
 cooldown = 0;
 //cooldownTime = 100;
-cooldownTime = 1;
+cooldownTime = 100;
 clipsize = 6;
 
-//test for github thingy
 
 </string>
           </argument>
@@ -353,7 +352,8 @@ depth = -y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///Firing Stuff
+
 if(!firing){
     firing = true;   
     instance_create(x, y, obj_meatball);
