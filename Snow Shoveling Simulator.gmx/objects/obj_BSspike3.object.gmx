@@ -28,7 +28,7 @@
             <string>///variables
 depth = -y
 
-alarm[0] = 90
+alarm[0] = 180
 
 </string>
           </argument>
