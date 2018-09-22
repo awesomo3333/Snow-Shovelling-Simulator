@@ -87,6 +87,7 @@
   <scripts name="scripts">
     <script>scripts\scr_BasicCollision.gml</script>
     <script>scripts\scr_BasicCollision_init.gml</script>
+    <script>scripts\scr_Abom_wandering.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_TNR</font>
@@ -147,6 +148,9 @@
       <objects name="BigSnow">
         <object>objects\obj_BigSnow</object>
       </objects>
+      <objects name="The Abomidable">
+        <object>objects\obj_abomidable</object>
+      </objects>
     </objects>
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
@@ -160,6 +164,7 @@
     <room>rooms\rm_options</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_tempwin</room>
+    <room>rooms\rm_snowFight5</room>
     <room>rooms\rm_snowFight</room>
   </rooms>
   <help>
