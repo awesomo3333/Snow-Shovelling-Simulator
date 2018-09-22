@@ -43,6 +43,7 @@
     </sprites>
     <sprites name="LevelSelect">
       <sprite>sprites\spr_lvl1</sprite>
+      <sprite>sprites\spr_lvl2</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_snowman</sprite>
@@ -62,6 +63,9 @@
         <sprite>sprites\spr_minisnow</sprite>
         <sprite>sprites\spr_abom_spawn</sprite>
         <sprite>sprites\spr_spawn_minisnow</sprite>
+      </sprites>
+      <sprites name="SnowGiant">
+        <sprite>sprites\spr_snowgiant</sprite>
       </sprites>
     </sprites>
     <sprites name="Powerups">
