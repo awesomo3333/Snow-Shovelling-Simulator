@@ -58,7 +58,8 @@
         <sprite>sprites\spr_BigSnow</sprite>
       </sprites>
       <sprites name="The Abomidable">
-        <sprite>sprites\spr_abomidable</sprite>
+        <sprite>sprites\spr_abomidable_opening</sprite>
+        <sprite>sprites\spr_abomidable_closing</sprite>
         <sprite>sprites\spr_minisnow</sprite>
         <sprite>sprites\spr_abom_spawn</sprite>
         <sprite>sprites\spr_spawn_minisnow</sprite>
@@ -87,7 +88,10 @@
   <scripts name="scripts">
     <script>scripts\scr_BasicCollision.gml</script>
     <script>scripts\scr_BasicCollision_init.gml</script>
-    <script>scripts\scr_Abom_wandering.gml</script>
+    <scripts name="The Abomidable">
+      <script>scripts\scr_Abom_wandering.gml</script>
+      <script>scripts\scr_Abom_running.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_TNR</font>
@@ -150,6 +154,8 @@
       </objects>
       <objects name="The Abomidable">
         <object>objects\obj_abomidable</object>
+        <object>objects\obj_minisnow</object>
+        <object>objects\obj_minisnow_spawn</object>
       </objects>
     </objects>
     <objects name="obj_powerups">

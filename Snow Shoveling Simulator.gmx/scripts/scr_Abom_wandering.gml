@@ -63,8 +63,44 @@ if(needPoint = true){   //Makes it keep from moving before it gets to point
     needPoint = false //Keeps him from repeatedly moving over and over again
     
     alarm[0] = 45 //starts alarm to stop him
+    
+}//End of need point true if statement
+
+
+//Animation stuff needed.
+if (speed = 0){ // starting animation when snowman stops
+    image_speed = .4
+}
+if (image_speed > 0) {// starts a controller for the animation while it is running
+    
+    if(sprite_index = spr_abomidable_opening){ //Changes from opening to spawning.
+        if (image_index > image_number - 1) {
+            sprite_index = spr_abom_spawn
+            image_speed = 1
+        }
+    }else if (sprite_index = spr_abom_spawn) { //Change from spawning to closing
+        if(image_index > image_number - 1){
+            sprite_index = spr_abomidable_closing
+            image_speed = .4
+        }
+    }else if (sprite_index = spr_abomidable_closing) { // changes from closing to starting the next walk.
+        if(image_index > image_number - 1){
+            sprite_index = spr_abomidable_opening
+            image_speed = 0
+            image_index = 0
+            needPoint = true
+            alarm[1] = 5 //Starts spawn for lilsnow
+        }
+    }
+
 }
 
-//Keep Within Room
-x=clamp(x, 0, room_width);
-y=clamp(y, 0, room_height);
+
+
+
+
+
+
+
+
+
