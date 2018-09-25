@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code>global.murder = false;
+  <code>global.murder = true;
 global.shootingsnowmen = true
 instance_create(0,0, obj_fadeIn);</code>
   <enableViews>-1</enableViews>
@@ -747,10 +747,11 @@ instance_create(0,0, obj_fadeIn);</code>
     <instance objName="obj_snow" x="64" y="80" name="inst_0D3C0A83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snow" x="96" y="32" name="inst_74320D5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snow" x="80" y="32" name="inst_4508874A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_snowman" x="896" y="64" name="inst_B292F264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_snowman" x="896" y="128" name="inst_DF546492" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_snowman" x="864" y="96" name="inst_EAB75A17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup" x="144" y="176" name="inst_4155AB4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BigSnow" x="880" y="64" name="inst_7489D944" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snowman" x="832" y="48" name="inst_6E440904" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snowman" x="832" y="144" name="inst_8FE5277A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snowman" x="736" y="16" name="inst_2E79185D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
