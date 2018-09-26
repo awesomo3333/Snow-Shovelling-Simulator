@@ -28,12 +28,12 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_snow</sprite>
     <sprites name="MainMenu">
-      <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_GN</sprite>
       <sprite>sprites\spr_mainmenu</sprite>
       <sprite>sprites\spr_snowmanFight</sprite>
       <sprite>sprites\spr_options</sprite>
       <sprite>sprites\spr_fade</sprite>
+      <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_endGame</sprite>
     </sprites>
     <sprites name="OptionsMenu">
@@ -76,6 +76,10 @@
     </sprites>
     <sprites name="Sprites to use in eastereggs">
       <sprite>sprites\spr_sticky</sprite>
+    </sprites>
+    <sprites name="Obsticals">
+      <sprite>sprites\spr_cementcrack</sprite>
+      <sprite>sprites\spr_snowcrack</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
