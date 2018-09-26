@@ -68,6 +68,9 @@
       <sprites name="SnowGiant">
         <sprite>sprites\spr_snowgiant</sprite>
       </sprites>
+      <sprites name="Snow Snake">
+        <sprite>sprites\spr_snowsnake</sprite>
+      </sprites>
     </sprites>
     <sprites name="Powerups">
       <sprite>sprites\spr_speed</sprite>
