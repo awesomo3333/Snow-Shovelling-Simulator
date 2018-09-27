@@ -84,6 +84,9 @@
       <sprite>sprites\spr_cementcrack</sprite>
       <sprite>sprites\spr_snowcrack</sprite>
     </sprites>
+    <sprites name="Mothers Basement">
+      <sprite>sprites\spr_momsbasement</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
