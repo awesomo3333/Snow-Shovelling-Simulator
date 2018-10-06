@@ -70,6 +70,7 @@
       </sprites>
       <sprites name="Snow Snake">
         <sprite>sprites\spr_snowsnake</sprite>
+        <sprite>sprites\spr_snakeopen</sprite>
       </sprites>
     </sprites>
     <sprites name="Powerups">
