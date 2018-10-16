@@ -62,9 +62,18 @@ if(needPoint = true){   //Makes it keep from moving before it gets to point
     
     needPoint = false //Keeps him from repeatedly moving over and over again
     
-    alarm[0] = 45 //starts alarm to stop him
+    if (myHealth <= (myHealthfull / 2)){
+        alarm[0] = 180
+    }else{
+        alarm[0] = 45 //starts alarm to stop him
+    }
     
 }//End of need point true if statement
+
+//Checks to see if state should be running away and starts a timer which will change state
+//if(point_distance(x, y, obj_player.x, obj_player.y) <= scareDistance){
+//    state = ABOMstates.running;
+//}
 
 
 //Animation stuff needed.

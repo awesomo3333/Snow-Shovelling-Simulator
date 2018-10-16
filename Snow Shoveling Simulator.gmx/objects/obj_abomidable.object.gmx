@@ -31,6 +31,10 @@ myHealth = myHealthfull
 spd = 3
 
 needPoint = true
+
+scareDistance = 128
+runDistance = 450
+runTimer = 150
 </string>
           </argument>
         </arguments>
@@ -81,6 +85,29 @@ state = ABOMstates.wandering
             <string>///Animation Stuffs
 image_index = 1;
 image_speed = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = ABOMstates.running
 </string>
           </argument>
         </arguments>
