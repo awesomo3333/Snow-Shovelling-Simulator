@@ -1,3 +1,11 @@
+//Checks to see if he should be scared
+if(point_distance(x, y, obj_player.x, obj_player.y) <= scareDistance){
+    scared = true;
+}
+
+
+if scared = false { //starts scared = false
+
 //Wandering Script for abomidable snowman
 if(needPoint = true){   //Makes it keep from moving before it gets to point
 
@@ -70,10 +78,6 @@ if(needPoint = true){   //Makes it keep from moving before it gets to point
     
 }//End of need point true if statement
 
-//Checks to see if state should be running away and starts a timer which will change state
-//if(point_distance(x, y, obj_player.x, obj_player.y) <= scareDistance){
-//    state = ABOMstates.running;
-//}
 
 
 //Animation stuff needed.
@@ -102,6 +106,29 @@ if (image_speed > 0) {// starts a controller for the animation while it is runni
         }
     }
 
+}
+
+}//End of scared = false
+
+
+if scared = true { //Beginning of scared = true
+    speed = 0;//makes abom stop moving
+    
+    //animation stuff
+    sprite_index = spr_abomidable_opening;
+    image_speed = 0;
+    image_index = 2;//I chose the second frame because then he will be holding his arms up slightly
+    
+    //Starts alarm, if player is still within scare distance when alarm goes off, abom runs away
+    alarm[2] = 60 
+    if(stillScared = true){
+    state = ABOMstates.running;
+    }
+    
+    //makes him not scared
+    if(point_distance(x, y, obj_player.x, obj_player.y) > scareDistance){
+        scared = false
+    }
 }
 
 

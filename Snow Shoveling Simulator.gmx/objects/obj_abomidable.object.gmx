@@ -30,9 +30,14 @@ myHealthfull = 300
 myHealth = myHealthfull
 spd = 3
 
+//Variables for Wandering state
 needPoint = true
+scared = false
+scareDistance = 60
+scareTimer = 60
+stillScared = false
 
-scareDistance = 128
+//Variables for Running
 runDistance = 450
 runTimer = 150
 </string>
@@ -107,7 +112,9 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = ABOMstates.running
+            <string>if(scared = true){
+stillScared = true
+}
 </string>
           </argument>
         </arguments>
