@@ -25,36 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Variables
-myHealthfull = 300
-myHealth = myHealthfull
-spd = 3
-
-needPoint = true
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Creating state options
 enum ABOMstates {
     wandering,
-    running
+    running,
+    lowHealth
 }
 
 state = ABOMstates.wandering
@@ -81,6 +56,134 @@ state = ABOMstates.wandering
             <string>///Animation Stuffs
 image_index = 1;
 image_speed = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Variables
+myHealthfull = 480
+myHealth = myHealthfull
+spd = 3
+
+//Variables for Wandering state
+needPoint = true
+scared = false
+scareDistance = 180
+scareTimer = 60
+alarmSet = false
+
+//Variables for Running
+runDistance = 300
+randomDirrang = 60
+changeDir = false
+dirAlarmSet = false
+dirChangetime = 60
+needNewOldcoods = true
+checkCoodsAlarm = 10
+checkCoodsAlarmSet = false
+newOldcoodsAlarm = 10
+checkCoods = false
+
+//Variables to change state to lowHealth
+lowHealth = myHealthfull / 4;
+
+
+//Variables for lowHealth state
+finishedLHspawn = true
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>checkCoodsAlarmSet = false
+checkCoods = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>changeDir = true;
+dirAlarmSet = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(scared = true){
+    state = ABOMstates.running
+}
+alarmSet = false
 </string>
           </argument>
         </arguments>
@@ -189,6 +292,11 @@ switch(state){
     case ABOMstates.running:
     scr_Abom_running();
     break;
+    
+    case ABOMstates.lowHealth:
+    scr_Abom_lowHealth();
+    break;
+    
     
 }
 </string>

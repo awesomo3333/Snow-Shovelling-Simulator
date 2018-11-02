@@ -1,3 +1,12 @@
+#define scr_Abom_wandering
+//Checks to see if he should be scared
+if(point_distance(x, y, obj_player.x, obj_player.y) <= scareDistance){
+    scared = true;
+}
+
+
+if scared = false { //starts scared = false
+
 //Wandering Script for abomidable snowman
 if(needPoint = true){   //Makes it keep from moving before it gets to point
 
@@ -62,9 +71,14 @@ if(needPoint = true){   //Makes it keep from moving before it gets to point
     
     needPoint = false //Keeps him from repeatedly moving over and over again
     
-    alarm[0] = 45 //starts alarm to stop him
+    if (myHealth <= (myHealthfull / 2)){
+        alarm[0] = 180
+    }else{
+        alarm[0] = 45 //starts alarm to stop him
+    }
     
 }//End of need point true if statement
+
 
 
 //Animation stuff needed.
@@ -95,6 +109,35 @@ if (image_speed > 0) {// starts a controller for the animation while it is runni
 
 }
 
+}//End of scared = false
+
+
+if scared = true { //Beginning of scared = true
+    speed = 0;//makes abom stop moving
+    
+    //animation stuff
+    sprite_index = spr_abomidable_opening;
+    image_speed = 0;
+    image_index = 2;
+    //I chose the second frame because then he will be holding his arms up slightly
+    
+    if(alarmSet = false){//sets a variable so it does not constantly reset the alarm back to two seconds.
+        //Starts alarm, if player is still within scare distance when alarm goes off, abom runs away
+        alarm[2] = 60 
+        alarmSet = true
+    }
+    
+    
+    //makes him not scared
+    if(point_distance(x, y, obj_player.x, obj_player.y) > scareDistance){
+        scared = false
+    }
+}//End of scared equal true
+
+//Change state to lowhealth state if he gets injured while in this state.
+if(myHealth <= lowHealth){
+    state = ABOMstates.lowHealth
+}
 
 
 
@@ -104,3 +147,6 @@ if (image_speed > 0) {// starts a controller for the animation while it is runni
 
 
 
+
+
+#define script4
