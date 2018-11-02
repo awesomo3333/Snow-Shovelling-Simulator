@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Initiate
 //variables
-health = 100000000;
+health = 100;
 spd_normal = 5;
 spd_powerup = 10;
 spd = spd_normal;
