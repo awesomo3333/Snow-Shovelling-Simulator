@@ -44,6 +44,7 @@
     <sprites name="LevelSelect">
       <sprite>sprites\spr_lvl1</sprite>
       <sprite>sprites\spr_lvl2</sprite>
+      <sprite>sprites\spr_lvl3</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_snowman</sprite>
