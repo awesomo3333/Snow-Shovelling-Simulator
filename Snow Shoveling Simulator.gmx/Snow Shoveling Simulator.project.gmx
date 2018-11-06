@@ -108,6 +108,7 @@
     <scripts name="The Abomidable">
       <script>scripts\scr_Abom_wandering.gml</script>
       <script>scripts\scr_Abom_running.gml</script>
+      <script>scripts\scr_Abom_lowHealth.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
