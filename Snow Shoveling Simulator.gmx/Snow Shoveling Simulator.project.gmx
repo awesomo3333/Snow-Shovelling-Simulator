@@ -90,6 +90,7 @@
       <sprite>sprites\spr_b</sprite>
       <sprite>sprites\spr_c</sprite>
     </sprites>
+    <sprite>sprites\spr_lvl2_house</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -179,6 +180,9 @@
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
     </objects>
+    <objects name="lvl2_room">
+      <object>objects\obj_lvl2_house</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splashscreen</room>
@@ -190,6 +194,7 @@
     <room>rooms\rm_tempwin</room>
     <room>rooms\rm_snowFight5</room>
     <room>rooms\rm_snowFight</room>
+    <room>rooms\rm_lvl_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
