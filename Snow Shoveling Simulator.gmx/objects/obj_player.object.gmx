@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initiate
+            <string> ///Initiate
 //variables
 health = 100;
 spd_normal = 5;
@@ -170,48 +170,97 @@ var a = keyboard_check(ord('A'));
 var s = keyboard_check(ord('S'));
 var w = keyboard_check(ord('W'));
 
-/// Move Right
-if (d){
-    x += spd;
-    
-    sprite_index = spr_player_right;
-    image_speed = imgspd;
-}
 
-/// Move Left
-if (a) {
-   
-   x -= spd;
-    
-   sprite_index = spr_player_left;
-   image_speed = imgspd;
-   
-}
+//Here we check if he has a speed power up and change his sprite accordingly
+if (spd &gt; spd_normal){//Runs this if his speed is higher than the normal speed, changing his sprite
 
-/// Move Down
-if (s) {
+    /// Move Right
+    if (d){
+        x += spd;
+        
+        sprite_index = spr_player_right_spd;
+        image_speed = imgspd;
+    }
     
-   y += spd;
-   
-   sprite_index = spr_player_down;
-   image_speed = imgspd;
+    /// Move Left
+    if (a) {
+       
+       x -= spd;
+        
+       sprite_index = spr_player_left_spd;
+       image_speed = imgspd;
+       
+    }
     
-}
+    /// Move Down
+    if (s) {
+        
+       y += spd;
+       
+       sprite_index = spr_player_down_spd;
+       image_speed = imgspd;
+        
+    }
+    
+    /// Move Up
+    if (w) {
+        
+        y -= spd;
+        
+        sprite_index = spr_player_up_spd;
+        image_speed = imgspd;
+        
+    }
+    //Stop walking when stopped
+    if ( !w &amp;&amp; !s &amp;&amp; !a &amp;&amp; !d) {
+        image_index = 0;
+        image_speed = 0;
+    }
+}else{ //uses the normal sprite if his speed is not above spd_normal
+    /// Move Right
+    if (d){
+        x += spd;
+        
+        sprite_index = spr_player_right;
+        image_speed = imgspd;
+    }
+    
+    /// Move Left
+    if (a) {
+       
+       x -= spd;
+        
+       sprite_index = spr_player_left;
+       image_speed = imgspd;
+       
+    }
+    
+    /// Move Down
+    if (s) {
+        
+       y += spd;
+       
+       sprite_index = spr_player_down;
+       image_speed = imgspd;
+        
+    }
+    
+    /// Move Up
+    if (w) {
+        
+        y -= spd;
+        
+        sprite_index = spr_player_up;
+        image_speed = imgspd;
+        
+    }
+    //Stop walking when stopped
+    if ( !w &amp;&amp; !s &amp;&amp; !a &amp;&amp; !d) {
+        image_index = 0;
+        image_speed = 0;
+    }
+}//End of normal sprite
 
-/// Move Up
-if (w) {
-    
-    y -= spd;
-    
-    sprite_index = spr_player_up;
-    image_speed = imgspd;
-    
-}
-//Stop walking when stopped
-if ( !w &amp;&amp; !s &amp;&amp; !a &amp;&amp; !d) {
-    image_index = 0;
-    image_speed = 0;
-}
 //Keep Within Room
 x=clamp(x, 0, room_width);
 y=clamp(y, 0, room_height);
@@ -307,29 +356,6 @@ depth = -y
             <string>health -= 1.5;
 
 //score -= 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_wall">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//collide
 </string>
           </argument>
         </arguments>

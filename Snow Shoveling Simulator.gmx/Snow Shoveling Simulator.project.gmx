@@ -25,7 +25,6 @@
     <sprites name="Player Weapons">
       <sprite>sprites\spr_meatball</sprite>
     </sprites>
-    <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_snow</sprite>
     <sprites name="MainMenu">
       <sprite>sprites\spr_GN</sprite>
@@ -85,16 +84,23 @@
       <sprite>sprites\spr_cementcrack</sprite>
       <sprite>sprites\spr_snowcrack</sprite>
     </sprites>
+    <sprites name="Walls">
+      <sprite>sprites\spr_wall_lvl1</sprite>
+      <sprite>sprites\spr_wall_lvl2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
     <background>background\bck_main</background>
-    <background>background\bck_lvl_1</background>
     <background>background\bck_tempwin</background>
     <background>background\bck_snowFight</background>
     <background>background\bck_optionsMenu</background>
     <background>background\bck_splashscreen</background>
     <background>background\bck_levelselect</background>
+    <backgrounds name="lvl backgrounds">
+      <background>background\bck_lvl_1</background>
+      <background>background\bck_lvl_2</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -129,8 +135,15 @@
       <object>objects\obj_fadeIn</object>
       <object>objects\obj_endGame</object>
     </objects>
-    <objects name="lvl_1">
-      <object>objects\obj_wall</object>
+    <objects name="Levels">
+      <objects name="lvl_1">
+        <object>objects\obj_wall_lvl1</object>
+        <object>objects\obj_lvl_1_controller</object>
+      </objects>
+      <objects name="lvl_2">
+        <object>objects\obj_wall_lvl2</object>
+        <object>objects\obj_lvl2_controller</object>
+      </objects>
     </objects>
     <objects name="Options">
       <object>objects\obj_options_controller</object>
@@ -139,17 +152,17 @@
       <object>objects\obj_fullscreen</object>
     </objects>
     <objects name="controllers">
-      <object>objects\obj_splashcontroller</object>
       <object>objects\obj_snowFightcontroller</object>
-      <object>objects\obj_lvl_1_controller</object>
       <object>objects\obj_bcksnd_starter</object>
     </objects>
     <objects name="LevelSelect">
       <object>objects\obj_SLlvl1</object>
+      <object>objects\obj_SLlvl2</object>
     </objects>
     <objects name="splashscreen">
       <object>objects\obj_splashFADEOUT</object>
       <object>objects\obj_splashFADEIN</object>
+      <object>objects\obj_splashcontroller</object>
     </objects>
     <objects name="Enemies">
       <object>objects\obj_snowman</object>
@@ -170,6 +183,9 @@
         <object>objects\obj_minisnow</object>
         <object>objects\obj_minisnow_spawn</object>
       </objects>
+      <objects name="Statues">
+        <object>objects\obj_SM_Statue</object>
+      </objects>
     </objects>
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
@@ -178,13 +194,16 @@
   <rooms name="rooms">
     <room>rooms\rm_splashscreen</room>
     <room>rooms\rm_main</room>
-    <room>rooms\rm_levelSelect</room>
-    <room>rooms\rm_lvl_1</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_tempwin</room>
     <room>rooms\rm_snowFight5</room>
     <room>rooms\rm_snowFight</room>
+    <rooms name="Levels">
+      <room>rooms\rm_levelSelect</room>
+      <room>rooms\rm_lvl_1</room>
+      <room>rooms\rm_lvl_2</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
