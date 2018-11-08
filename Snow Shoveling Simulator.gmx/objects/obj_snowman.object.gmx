@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
-spd = 4;
+spd = 3.5;
 collide = false;
 moving = true
 myHealth = 90

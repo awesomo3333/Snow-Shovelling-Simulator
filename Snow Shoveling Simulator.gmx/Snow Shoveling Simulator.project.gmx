@@ -135,16 +135,6 @@
       <object>objects\obj_fadeIn</object>
       <object>objects\obj_endGame</object>
     </objects>
-    <objects name="Levels">
-      <objects name="lvl_1">
-        <object>objects\obj_wall_lvl1</object>
-        <object>objects\obj_lvl_1_controller</object>
-      </objects>
-      <objects name="lvl_2">
-        <object>objects\obj_wall_lvl2</object>
-        <object>objects\obj_lvl2_controller</object>
-      </objects>
-    </objects>
     <objects name="Options">
       <object>objects\obj_options_controller</object>
       <object>objects\obj_volume_up</object>
@@ -154,6 +144,16 @@
     <objects name="controllers">
       <object>objects\obj_snowFightcontroller</object>
       <object>objects\obj_bcksnd_starter</object>
+    </objects>
+    <objects name="Levels">
+      <objects name="lvl_1">
+        <object>objects\obj_wall_lvl1</object>
+        <object>objects\obj_lvl_1_controller</object>
+      </objects>
+      <objects name="lvl_2">
+        <object>objects\obj_wall_lvl2</object>
+        <object>objects\obj_lvl2_controller</object>
+      </objects>
     </objects>
     <objects name="LevelSelect">
       <object>objects\obj_SLlvl1</object>
