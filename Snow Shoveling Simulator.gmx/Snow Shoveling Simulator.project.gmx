@@ -190,6 +190,9 @@
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
     </objects>
+    <objects name="Obsticals">
+      <object>objects\obj_crack</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splashscreen</room>
