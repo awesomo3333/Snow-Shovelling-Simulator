@@ -189,6 +189,7 @@
     </objects>
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
+      <object>objects\obj_superthrow</object>
     </objects>
     <objects name="Obsticals">
       <object>objects\obj_crack</object>

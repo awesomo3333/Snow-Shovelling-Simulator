@@ -34,14 +34,40 @@ spd = spd_normal;
 imgspd_normal = .5;
 imgspd_powerup = 0;
 imgspd = imgspd_normal;
+
+//Meathball throwing variables
+clipsizeNormal = 6;
+clipsizeSupThro = 10000;
 firing = false;
 rateOfFire = 10;
 cooldown = 0;
-//cooldownTime = 100;
 cooldownTime = 100;
-clipsize = 6;
+clipsize = clipsizeNormal;
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>clipsize = clipsizeNormal
 </string>
           </argument>
         </arguments>
