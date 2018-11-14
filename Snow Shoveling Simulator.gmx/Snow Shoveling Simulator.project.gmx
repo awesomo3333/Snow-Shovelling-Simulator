@@ -114,6 +114,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_TNR</font>
+    <font>fonts\fnt_pauseMenu</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_snow</object>
@@ -154,6 +155,7 @@
     <objects name="controllers">
       <object>objects\obj_snowFightcontroller</object>
       <object>objects\obj_bcksnd_starter</object>
+      <object>objects\obj_pause_controller</object>
     </objects>
     <objects name="LevelSelect">
       <object>objects\obj_SLlvl1</object>
