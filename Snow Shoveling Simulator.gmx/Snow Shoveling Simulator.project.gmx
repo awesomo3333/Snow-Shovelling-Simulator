@@ -100,6 +100,7 @@
     <backgrounds name="lvl backgrounds">
       <background>background\bck_lvl_1</background>
       <background>background\bck_lvl_2</background>
+      <background>background\bck_lvl_3</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
