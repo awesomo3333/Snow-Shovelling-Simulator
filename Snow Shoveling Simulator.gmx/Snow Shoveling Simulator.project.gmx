@@ -114,6 +114,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_TNR</font>
+    <font>fonts\fnt_pauseMenu</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_snow</object>
@@ -144,6 +145,7 @@
     <objects name="controllers">
       <object>objects\obj_snowFightcontroller</object>
       <object>objects\obj_bcksnd_starter</object>
+      <object>objects\obj_pause_controller</object>
     </objects>
     <objects name="Levels">
       <objects name="lvl_1">
@@ -189,6 +191,10 @@
     </objects>
     <objects name="obj_powerups">
       <object>objects\obj_powerup</object>
+      <object>objects\obj_superthrow</object>
+    </objects>
+    <objects name="Obsticals">
+      <object>objects\obj_crack</object>
     </objects>
   </objects>
   <rooms name="rooms">
