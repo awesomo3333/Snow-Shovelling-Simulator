@@ -54,6 +54,9 @@
           <sprite>sprites\spr_BSspike2</sprite>
           <sprite>sprites\spr_BSspike3</sprite>
         </sprites>
+        <sprites name="GiantSnowball">
+          <sprite>sprites\spr_giantSnowball</sprite>
+        </sprites>
       </sprites>
       <sprites name="BigSnow">
         <sprite>sprites\spr_BigSnow</sprite>
@@ -175,6 +178,9 @@
           <object>objects\obj_BSspike1</object>
           <object>objects\obj_BSspike2</object>
           <object>objects\obj_BSspike3</object>
+        </objects>
+        <objects name="GiantSnowball">
+          <object>objects\obj_giantSnowball</object>
         </objects>
       </objects>
       <objects name="BigSnow">
