@@ -73,6 +73,7 @@
       </sprites>
       <sprites name="Snow Snake">
         <sprite>sprites\spr_snowsnake</sprite>
+        <sprite>sprites\spr_snakeopen</sprite>
       </sprites>
     </sprites>
     <sprites name="Powerups">
@@ -91,6 +92,12 @@
       <sprite>sprites\spr_wall_lvl1</sprite>
       <sprite>sprites\spr_wall_lvl2</sprite>
     </sprites>
+    <sprites name="Letters">
+      <sprite>sprites\spr_a</sprite>
+      <sprite>sprites\spr_b</sprite>
+      <sprite>sprites\spr_c</sprite>
+    </sprites>
+    <sprite>sprites\spr_lvl2_house</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
@@ -201,6 +208,9 @@
     </objects>
     <objects name="Obsticals">
       <object>objects\obj_crack</object>
+    </objects>
+    <objects name="lvl2_room">
+      <object>objects\obj_lvl2_house</object>
     </objects>
   </objects>
   <rooms name="rooms">
