@@ -1,8 +1,8 @@
 #define scr_Abom_wandering
 //Checks to see if he should be scared
-if(point_distance(x, y, obj_player.x, obj_player.y) <= scareDistance){
-    scared = true;
-}
+//if(point_distance(x, y, obj_player.x, obj_player.y) <= scareDistance){
+//    scared = true;
+//}
 
 
 if scared = false { //starts scared = false
