@@ -50,7 +50,7 @@ depth = -1000;
           <argument>
             <kind>1</kind>
             <string>image_alpha -=0.08;
-if(image_alpha &gt;= 1) {
+if(image_alpha &lt;= 0) {
 instance_destroy();
 }
 

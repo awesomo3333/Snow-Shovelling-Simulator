@@ -51,7 +51,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.nextroom = rm_main;
+            <string>global.nextroom = rm_mainScroll;
 instance_create(0, 0, obj_splashFADEOUT);
 </string>
           </argument>
