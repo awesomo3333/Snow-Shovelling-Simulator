@@ -49,7 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>if(pause = true){
-    draw_sprite(spr_pausebackground, 0, view_xview, view_yview)
+    //Commented out because could not get screenshot to work properly - D
+    //draw_sprite(spr_pausebackground, 0, view_xview, view_yview)
 
     
     draw_sprite(spr_pause_overlay, 0, (view_xview + (view_xview + view_wview)) / 2, (view_yview + (view_yview + view_hview)) / 2)
@@ -79,19 +80,21 @@
             <string>if(pause = false){
     pause = true;
     
-    screen_save_part("pause_background.png", view_xview, view_yview, 256, 144)
+    //Commented out because I could not get the screenshot to work properly - D
+    //screen_save_part("pause_background.png", view_xview, view_yview, 256, 144)
+    //spr_pausebackground = sprite_add("pause_background.png", 0, false, false, 0, 0)
     
-    spr_pausebackground = sprite_add("pause_background.png", 0, false, false, 0, 0)
-    
+    //Currently just shows background and snow but pauses properly - D
     instance_deactivate_all(true);
-    //instance_activate_object(obj_snow)
+    instance_activate_object(obj_snow)
 }
 
 else{
     pause = false;
 
-    sprite_delete(spr_pausebackground);
-    file_delete("pause_background.png");
+    //Commented out because I could not get the screenshot to work properly - D
+    //sprite_delete(spr_pausebackground);
+    //file_delete("pause_background.png");
     
     instance_activate_all();
 }
