@@ -163,6 +163,7 @@
       <object>objects\obj_snowFightcontroller</object>
       <object>objects\obj_bcksnd_starter</object>
       <object>objects\obj_pause_controller</object>
+      <object>objects\obj_pause_menu_controller</object>
     </objects>
     <objects name="Levels">
       <objects name="lvl_1">
