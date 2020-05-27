@@ -49,13 +49,11 @@
           <argument>
             <kind>1</kind>
             <string>if(pause = true){
-    draw_set_color(c_black);
-    draw_rectangle(view_xview, view_yview, view_xview + view_wview, view_yview + view_hview, 0)
-    draw_set_halign(fa_center);
-    draw_set_font(fnt_pauseMenu);
-    draw_set_color(c_white);
-    draw_text(view_xview + (view_wview / 2), view_yview + (view_hview / 3), "Game Paused")
-    draw_set_color(c_black);
+    //Commented out because could not get screenshot to work properly - D
+    //draw_sprite(spr_pausebackground, 0, view_xview, view_yview)
+
+    
+    draw_sprite(spr_pause_overlay, 0, (view_xview + (view_xview + view_wview)) / 2, (view_yview + (view_yview + view_hview)) / 2)
 }
 </string>
           </argument>
@@ -80,12 +78,24 @@
           <argument>
             <kind>1</kind>
             <string>if(pause = false){
-
     pause = true;
+    
+    //Commented out because I could not get the screenshot to work properly - D
+    //screen_save_part("pause_background.png", view_xview, view_yview, 256, 144)
+    //spr_pausebackground = sprite_add("pause_background.png", 0, false, false, 0, 0)
+    
+    //Currently just shows background and snow but pauses properly - D
     instance_deactivate_all(true);
+    instance_activate_object(obj_snow)
+}
 
-}else{
+else{
     pause = false;
+
+    //Commented out because I could not get the screenshot to work properly - D
+    //sprite_delete(spr_pausebackground);
+    //file_delete("pause_background.png");
+    
     instance_activate_all();
 }
 </string>
