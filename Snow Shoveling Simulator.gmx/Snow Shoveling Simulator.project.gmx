@@ -100,6 +100,9 @@
     <sprite>sprites\spr_lvl2_house</sprite>
     <sprites name="Pause Menu Stuff">
       <sprite>sprites\spr_pause_overlay</sprite>
+      <sprite>sprites\spr_mainmenu_pause</sprite>
+      <sprite>sprites\spr_continue_pause</sprite>
+      <sprite>sprites\spr_restartLVL_pause</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -162,10 +165,13 @@
     <objects name="controllers">
       <object>objects\obj_snowFightcontroller</object>
       <object>objects\obj_bcksnd_starter</object>
-      <object>objects\obj_pause_controller</object>
-      <object>objects\obj_pause_menu_controller</object>
+      <objects name="Pause">
+        <object>objects\obj_pause_controller</object>
+        <object>objects\obj_pauselvlRestart</object>
+      </objects>
     </objects>
     <objects name="Levels">
+      <object>objects\obj_wallParent</object>
       <objects name="lvl_1">
         <object>objects\obj_wall_lvl1</object>
         <object>objects\obj_lvl_1_controller</object>

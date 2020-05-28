@@ -53,7 +53,7 @@ if (instance_number(obj_snow) &lt;= 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_pause_menu_controller);
+            <string>//instance_create(x, y, obj_pause_menu_controller);
 </string>
           </argument>
         </arguments>

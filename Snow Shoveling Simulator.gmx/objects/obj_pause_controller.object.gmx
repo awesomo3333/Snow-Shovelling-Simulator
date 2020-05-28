@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>pause = false
+
 </string>
           </argument>
         </arguments>
@@ -86,7 +87,8 @@
     
     //Currently just shows background and snow but pauses properly - D
     instance_deactivate_all(true);
-    instance_activate_object(obj_snow)
+    instance_activate_object(obj_snow);
+    instance_activate_object(obj_wallParent);
 }
 
 else{
