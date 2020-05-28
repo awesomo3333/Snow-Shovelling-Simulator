@@ -168,6 +168,8 @@
       <objects name="Pause">
         <object>objects\obj_pause_controller</object>
         <object>objects\obj_pauselvlRestart</object>
+        <object>objects\obj_mainmenu_pause</object>
+        <object>objects\obj_continue_pause</object>
       </objects>
     </objects>
     <objects name="Levels">

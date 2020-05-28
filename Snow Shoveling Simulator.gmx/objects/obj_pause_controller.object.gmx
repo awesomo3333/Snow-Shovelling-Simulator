@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pause = false
+            <string>pause = false;
+
+
 
 </string>
           </argument>
@@ -50,11 +52,19 @@
           <argument>
             <kind>1</kind>
             <string>if(pause = true){
-    //Commented out because could not get screenshot to work properly - D
-    //draw_sprite(spr_pausebackground, 0, view_xview, view_yview)
 
+    //Draw Background for pause menu 
+    draw_sprite(spr_pause_overlay, 0, (view_xview + (view_xview + view_wview)) / 2, (view_yview + (view_yview + view_hview)) / 2);
     
-    draw_sprite(spr_pause_overlay, 0, (view_xview + (view_xview + view_wview)) / 2, (view_yview + (view_yview + view_hview)) / 2)
+    //Create Continue Button object
+    instance_create( (view_xview + (view_xview + view_wview)) / 2, ((view_yview + (view_yview + view_hview)) / 2) - 20, obj_continue_pause);
+    
+    //Create Restart Button object
+    instance_create( (view_xview + (view_xview + view_wview)) / 2, (view_yview + (view_yview + view_hview)) / 2, obj_pauselvlRestart);
+    
+    //Create Main Menu button object
+    instance_create( (view_xview + (view_xview + view_wview)) / 2, ((view_yview + (view_yview + view_hview)) / 2) + 20, obj_mainmenu_pause);
+    
 }
 </string>
           </argument>
@@ -80,12 +90,9 @@
             <kind>1</kind>
             <string>if(pause = false){
     pause = true;
-    
-    //Commented out because I could not get the screenshot to work properly - D
-    //screen_save_part("pause_background.png", view_xview, view_yview, 256, 144)
-    //spr_pausebackground = sprite_add("pause_background.png", 0, false, false, 0, 0)
-    
-    //Currently just shows background and snow but pauses properly - D
+    //Deactivates all instances, then enables the static instances such as snow
+    //and walls so that they can still be seen from the pause menu. Any moving
+    //entity, or entity that could act while the game is paused is deactivated
     instance_deactivate_all(true);
     instance_activate_object(obj_snow);
     instance_activate_object(obj_wallParent);
@@ -93,11 +100,11 @@
 
 else{
     pause = false;
-
-    //Commented out because I could not get the screenshot to work properly - D
-    //sprite_delete(spr_pausebackground);
-    //file_delete("pause_background.png");
     
+    //Destroy the buttons that are spawned and reactivate all objects
+    instance_destroy(obj_pauselvlRestart);
+    instance_destroy(obj_continue_pause);
+    instance_destroy(obj_mainmenu_pause);
     instance_activate_all();
 }
 </string>
