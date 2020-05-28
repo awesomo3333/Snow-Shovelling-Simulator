@@ -25,47 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pause = false;
-
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(pause = true){
-
-    //Draw Background for pause menu 
-    draw_sprite(spr_pause_overlay, 0, (view_xview + (view_xview + view_wview)) / 2, (view_yview + (view_yview + view_hview)) / 2);
-    
-    //Create Continue Button object
-    instance_create( (view_xview + (view_xview + view_wview)) / 2, ((view_yview + (view_yview + view_hview)) / 2) - 20, obj_continue_pause);
-    
-    //Create Restart Button object
-    instance_create( (view_xview + (view_xview + view_wview)) / 2, (view_yview + (view_yview + view_hview)) / 2, obj_pauselvlRestart);
-    
-    //Create Main Menu button object
-    instance_create( (view_xview + (view_xview + view_wview)) / 2, ((view_yview + (view_yview + view_hview)) / 2) + 20, obj_mainmenu_pause);
-    
-}
+            <string>global.pause = false
 </string>
           </argument>
         </arguments>
@@ -88,24 +48,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(pause = false){
-    pause = true;
-    //Deactivates all instances, then enables the static instances such as snow
-    //and walls so that they can still be seen from the pause menu. Any moving
-    //entity, or entity that could act while the game is paused is deactivated
-    instance_deactivate_all(true);
-    instance_activate_object(obj_snow);
-    instance_activate_object(obj_wallParent);
+            <string>if(global.pause = false){
+    global.pause =true
 }
-
-else{
-    pause = false;
-    
-    //Destroy the buttons that are spawned and reactivate all objects
-    instance_destroy(obj_pauselvlRestart);
-    instance_destroy(obj_continue_pause);
-    instance_destroy(obj_mainmenu_pause);
-    instance_activate_all();
+if(global.pause = true){
+    global.pause = false
 }
 </string>
           </argument>
