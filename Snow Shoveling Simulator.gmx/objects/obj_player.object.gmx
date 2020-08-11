@@ -335,7 +335,8 @@ y=clamp(y, 0, room_height);
             <kind>1</kind>
             <string>///Check Dead
 if (health &lt;= 0) {
-    global.nextroom = rm_main;
+    global.roomdead = room
+    global.nextroom = rm_deathScreen;
     instance_create(0,0,obj_fade);
 }
 </string>

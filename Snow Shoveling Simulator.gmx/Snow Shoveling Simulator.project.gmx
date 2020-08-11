@@ -10,110 +10,130 @@
     <sound>sound\snd_SpikeCreation</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Player">
-      <sprite>sprites\spr_player_down</sprite>
-      <sprite>sprites\spr_player_up</sprite>
-      <sprite>sprites\spr_player_right</sprite>
-      <sprite>sprites\spr_player_left</sprite>
-      <sprites name="spr_speedboost">
-        <sprite>sprites\spr_player_up_spd</sprite>
-        <sprite>sprites\spr_player_down_spd</sprite>
-        <sprite>sprites\spr_player_right_spd</sprite>
-        <sprite>sprites\spr_player_left_spd</sprite>
+    <sprites name="Menus">
+      <sprites name="DeathScreen Stuff">
+        <sprite>sprites\spr_retryRoom</sprite>
+      </sprites>
+      <sprites name="Pause Menu Stuff">
+        <sprite>sprites\spr_pause_overlay</sprite>
+        <sprite>sprites\spr_mainmenu_pause</sprite>
+        <sprite>sprites\spr_continue_pause</sprite>
+        <sprite>sprites\spr_restartLVL_pause</sprite>
+      </sprites>
+      <sprites name="OptionsMenu">
+        <sprite>sprites\spr_volume_up</sprite>
+        <sprite>sprites\spr_volume_down</sprite>
+        <sprite>sprites\spr_fullscreen</sprite>
+      </sprites>
+      <sprites name="MainMenu">
+        <sprite>sprites\spr_GN</sprite>
+        <sprite>sprites\spr_mainmenu</sprite>
+        <sprite>sprites\spr_snowmanFight</sprite>
+        <sprite>sprites\spr_options</sprite>
+        <sprite>sprites\spr_fade</sprite>
+        <sprite>sprites\spr_play</sprite>
+        <sprite>sprites\spr_endGame</sprite>
       </sprites>
     </sprites>
-    <sprites name="Player Weapons">
-      <sprite>sprites\spr_meatball</sprite>
+    <sprites name="Levels">
+      <sprites name="LevelSelect">
+        <sprite>sprites\spr_lvl1</sprite>
+        <sprite>sprites\spr_lvl2</sprite>
+        <sprite>sprites\spr_lvl3</sprite>
+      </sprites>
+      <sprites name="Walls">
+        <sprite>sprites\spr_wall_lvl1</sprite>
+        <sprite>sprites\spr_wall_lvl2</sprite>
+        <sprite>sprites\spr_lvl2_house</sprite>
+      </sprites>
     </sprites>
-    <sprite>sprites\spr_snow</sprite>
-    <sprites name="MainMenu">
-      <sprite>sprites\spr_GN</sprite>
-      <sprite>sprites\spr_mainmenu</sprite>
-      <sprite>sprites\spr_snowmanFight</sprite>
-      <sprite>sprites\spr_options</sprite>
-      <sprite>sprites\spr_fade</sprite>
-      <sprite>sprites\spr_play</sprite>
-      <sprite>sprites\spr_endGame</sprite>
-    </sprites>
-    <sprites name="OptionsMenu">
-      <sprite>sprites\spr_volume_up</sprite>
-      <sprite>sprites\spr_volume_down</sprite>
-      <sprite>sprites\spr_fullscreen</sprite>
-    </sprites>
-    <sprites name="LevelSelect">
-      <sprite>sprites\spr_lvl1</sprite>
-      <sprite>sprites\spr_lvl2</sprite>
-      <sprite>sprites\spr_lvl3</sprite>
-    </sprites>
-    <sprites name="Enemies">
-      <sprite>sprites\spr_snowman</sprite>
-      <sprites name="Enemy Weapons">
-        <sprite>sprites\spr_snowball</sprite>
-        <sprites name="BigSnowsSprites">
-          <sprite>sprites\spr_BSspike1</sprite>
-          <sprite>sprites\spr_BSspike2</sprite>
-          <sprite>sprites\spr_BSspike3</sprite>
+    <sprites name="Entities">
+      <sprites name="Player">
+        <sprite>sprites\spr_player_down</sprite>
+        <sprite>sprites\spr_player_up</sprite>
+        <sprite>sprites\spr_player_right</sprite>
+        <sprite>sprites\spr_player_left</sprite>
+        <sprites name="spr_speedboost">
+          <sprite>sprites\spr_player_up_spd</sprite>
+          <sprite>sprites\spr_player_down_spd</sprite>
+          <sprite>sprites\spr_player_right_spd</sprite>
+          <sprite>sprites\spr_player_left_spd</sprite>
         </sprites>
-        <sprites name="GiantSnowball">
-          <sprite>sprites\spr_giantSnowball</sprite>
+        <sprites name="Player Weapons">
+          <sprite>sprites\spr_meatball</sprite>
+        </sprites>
+        <sprites name="Powerups">
+          <sprite>sprites\spr_speed</sprite>
+          <sprite>sprites\spr_superthrow</sprite>
+          <sprite>sprites\spr_lemonade</sprite>
         </sprites>
       </sprites>
-      <sprites name="BigSnow">
-        <sprite>sprites\spr_BigSnow</sprite>
+      <sprites name="Enemies">
+        <sprite>sprites\spr_snowman</sprite>
+        <sprites name="Enemy Weapons">
+          <sprite>sprites\spr_snowball</sprite>
+          <sprites name="BigSnowsSprites">
+            <sprite>sprites\spr_BSspike1</sprite>
+            <sprite>sprites\spr_BSspike2</sprite>
+            <sprite>sprites\spr_BSspike3</sprite>
+          </sprites>
+          <sprites name="GiantSnowball">
+            <sprite>sprites\spr_giantSnowball</sprite>
+          </sprites>
+        </sprites>
+        <sprites name="BigSnow">
+          <sprite>sprites\spr_BigSnow</sprite>
+        </sprites>
+        <sprites name="The Abomidable">
+          <sprite>sprites\spr_abomidable_opening</sprite>
+          <sprite>sprites\spr_abomidable_closing</sprite>
+          <sprite>sprites\spr_minisnow</sprite>
+          <sprite>sprites\spr_abom_spawn</sprite>
+          <sprite>sprites\spr_spawn_minisnow</sprite>
+        </sprites>
+        <sprites name="SnowGiant">
+          <sprite>sprites\spr_snowgiant</sprite>
+        </sprites>
+        <sprites name="Snow Snake">
+          <sprite>sprites\spr_snowsnake</sprite>
+          <sprite>sprites\spr_snakeopen</sprite>
+        </sprites>
+        <sprites name="MobMashGuy">
+          <sprite>sprites\spr_mobmash</sprite>
+        </sprites>
       </sprites>
-      <sprites name="The Abomidable">
-        <sprite>sprites\spr_abomidable_opening</sprite>
-        <sprite>sprites\spr_abomidable_closing</sprite>
-        <sprite>sprites\spr_minisnow</sprite>
-        <sprite>sprites\spr_abom_spawn</sprite>
-        <sprite>sprites\spr_spawn_minisnow</sprite>
-      </sprites>
-      <sprites name="SnowGiant">
-        <sprite>sprites\spr_snowgiant</sprite>
-      </sprites>
-      <sprites name="Snow Snake">
-        <sprite>sprites\spr_snowsnake</sprite>
-        <sprite>sprites\spr_snakeopen</sprite>
-      </sprites>
-      <sprites name="MobMashGuy">
-        <sprite>sprites\spr_mobmash</sprite>
-      </sprites>
-    </sprites>
-    <sprites name="Powerups">
-      <sprite>sprites\spr_speed</sprite>
-      <sprite>sprites\spr_superthrow</sprite>
-      <sprite>sprites\spr_lemonade</sprite>
-    </sprites>
-    <sprites name="Sprites to use in eastereggs">
-      <sprite>sprites\spr_sticky</sprite>
+      <sprite>sprites\spr_snow</sprite>
     </sprites>
     <sprites name="Obsticals">
       <sprite>sprites\spr_cementcrack</sprite>
       <sprite>sprites\spr_snowcrack</sprite>
     </sprites>
-    <sprites name="Walls">
-      <sprite>sprites\spr_wall_lvl1</sprite>
-      <sprite>sprites\spr_wall_lvl2</sprite>
+    <sprites name="Misc">
+      <sprites name="Letters">
+        <sprite>sprites\spr_a</sprite>
+        <sprite>sprites\spr_b</sprite>
+        <sprite>sprites\spr_c</sprite>
+      </sprites>
     </sprites>
-    <sprites name="Letters">
-      <sprite>sprites\spr_a</sprite>
-      <sprite>sprites\spr_b</sprite>
-      <sprite>sprites\spr_c</sprite>
+    <sprites name="Sprites to use in eastereggs">
+      <sprite>sprites\spr_sticky</sprite>
     </sprites>
-    <sprite>sprites\spr_lvl2_house</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
-    <background>background\bck_main</background>
-    <background>background\bck_mainScroll</background>
-    <background>background\bck_tempwin</background>
-    <background>background\bck_snowFight</background>
-    <background>background\bck_optionsMenu</background>
-    <background>background\bck_splashscreen</background>
-    <background>background\bck_levelselect</background>
+    <backgrounds name="Menu">
+      <background>background\bck_main</background>
+      <background>background\bck_mainScroll</background>
+      <background>background\bck_tempwin</background>
+      <background>background\bck_deathScreen</background>
+      <background>background\bck_optionsMenu</background>
+      <background>background\bck_splashscreen</background>
+      <background>background\bck_levelselect</background>
+    </backgrounds>
     <backgrounds name="lvl backgrounds">
       <background>background\bck_lvl_1</background>
       <background>background\bck_lvl_2</background>
+      <background>background\bck_snowFight</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -131,40 +151,40 @@
     <font>fonts\fnt_pauseMenu</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_snow</object>
-    <objects name="Player">
-      <object>objects\obj_player</object>
-      <object>objects\obj_playerstats</object>
-      <objects name="Player Weapons">
-        <object>objects\obj_meatball</object>
-        <object>objects\obj_deadmeatball</object>
+    <objects name="Menus">
+      <objects name="MainMenu">
+        <objects name="MainMenuScroll">
+          <object>objects\obj_GN_Scroll</object>
+        </objects>
+        <object>objects\obj_play</object>
+        <object>objects\obj_snowFight</object>
+        <object>objects\obj_GN</object>
+        <object>objects\obj_mainmenu</object>
+        <object>objects\obj_options</object>
+        <object>objects\obj_fade</object>
+        <object>objects\obj_fadeIn</object>
+        <object>objects\obj_endGame</object>
       </objects>
-    </objects>
-    <objects name="MainMenu">
-      <objects name="MainMenuScroll">
-        <object>objects\obj_GN_Scroll</object>
+      <objects name="Death Screen">
+        <object>objects\obj_retryRoom</object>
       </objects>
-      <object>objects\obj_play</object>
-      <object>objects\obj_snowFight</object>
-      <object>objects\obj_GN</object>
-      <object>objects\obj_mainmenu</object>
-      <object>objects\obj_options</object>
-      <object>objects\obj_fade</object>
-      <object>objects\obj_fadeIn</object>
-      <object>objects\obj_endGame</object>
-    </objects>
-    <objects name="Options">
-      <object>objects\obj_options_controller</object>
-      <object>objects\obj_volume_up</object>
-      <object>objects\obj_volume_down</object>
-      <object>objects\obj_fullscreen</object>
-    </objects>
-    <objects name="controllers">
-      <object>objects\obj_snowFightcontroller</object>
-      <object>objects\obj_bcksnd_starter</object>
-      <object>objects\obj_pause_controller</object>
+      <objects name="splashscreen">
+        <object>objects\obj_splashFADEOUT</object>
+        <object>objects\obj_splashFADEIN</object>
+        <object>objects\obj_splashcontroller</object>
+      </objects>
+      <objects name="Options">
+        <object>objects\obj_options_controller</object>
+        <object>objects\obj_volume_up</object>
+        <object>objects\obj_volume_down</object>
+        <object>objects\obj_fullscreen</object>
+      </objects>
     </objects>
     <objects name="Levels">
+      <objects name="LevelSelect">
+        <object>objects\obj_SLlvl1</object>
+        <object>objects\obj_SLlvl2</object>
+      </objects>
       <objects name="lvl_1">
         <object>objects\obj_wall_lvl1</object>
         <object>objects\obj_lvl_1_controller</object>
@@ -172,59 +192,71 @@
       <objects name="lvl_2">
         <object>objects\obj_wall_lvl2</object>
         <object>objects\obj_lvl2_controller</object>
-      </objects>
-    </objects>
-    <objects name="LevelSelect">
-      <object>objects\obj_SLlvl1</object>
-      <object>objects\obj_SLlvl2</object>
-    </objects>
-    <objects name="splashscreen">
-      <object>objects\obj_splashFADEOUT</object>
-      <object>objects\obj_splashFADEIN</object>
-      <object>objects\obj_splashcontroller</object>
-    </objects>
-    <objects name="Enemies">
-      <object>objects\obj_snowman</object>
-      <objects name="Enemy Weapons">
-        <object>objects\obj_snowball</object>
-        <object>objects\obj_deadsnowball</object>
-        <objects name="Big Snows Spikes">
-          <object>objects\obj_BSspike1</object>
-          <object>objects\obj_BSspike2</object>
-          <object>objects\obj_BSspike3</object>
-        </objects>
-        <objects name="GiantSnowball">
-          <object>objects\obj_giantSnowball</object>
+        <objects name="lvl2_room">
+          <object>objects\obj_lvl2_house</object>
         </objects>
       </objects>
-      <objects name="BigSnow">
-        <object>objects\obj_BigSnow</object>
-      </objects>
-      <objects name="The Abomidable">
-        <object>objects\obj_abomidable</object>
-        <object>objects\obj_minisnow</object>
-        <object>objects\obj_minisnow_spawn</object>
-      </objects>
-      <objects name="Statues">
-        <object>objects\obj_SM_Statue</object>
-      </objects>
+      <object>objects\obj_wallParent</object>
     </objects>
-    <objects name="obj_powerups">
-      <object>objects\obj_powerup</object>
-      <object>objects\obj_superthrow</object>
+    <objects name="Entities">
+      <objects name="Player">
+        <object>objects\obj_player</object>
+        <object>objects\obj_playerstats</object>
+        <objects name="Player Weapons">
+          <object>objects\obj_meatball</object>
+          <object>objects\obj_deadmeatball</object>
+        </objects>
+        <objects name="obj_powerups">
+          <object>objects\obj_powerup</object>
+          <object>objects\obj_superthrow</object>
+        </objects>
+      </objects>
+      <objects name="Enemies">
+        <object>objects\obj_snowman</object>
+        <objects name="Enemy Weapons">
+          <object>objects\obj_snowball</object>
+          <object>objects\obj_deadsnowball</object>
+          <objects name="Big Snows Spikes">
+            <object>objects\obj_BSspike1</object>
+            <object>objects\obj_BSspike2</object>
+            <object>objects\obj_BSspike3</object>
+          </objects>
+          <objects name="GiantSnowball">
+            <object>objects\obj_giantSnowball</object>
+          </objects>
+        </objects>
+        <objects name="BigSnow">
+          <object>objects\obj_BigSnow</object>
+        </objects>
+        <objects name="The Abomidable">
+          <object>objects\obj_abomidable</object>
+          <object>objects\obj_minisnow</object>
+          <object>objects\obj_minisnow_spawn</object>
+        </objects>
+        <objects name="Statues">
+          <object>objects\obj_SM_Statue</object>
+        </objects>
+      </objects>
+      <object>objects\obj_snow</object>
+    </objects>
+    <objects name="controllers">
+      <object>objects\obj_snowFightcontroller</object>
+      <object>objects\obj_bcksnd_starter</object>
+      <objects name="Pause">
+        <object>objects\obj_pause_controller</object>
+        <object>objects\obj_pauselvlRestart</object>
+        <object>objects\obj_mainmenu_pause</object>
+        <object>objects\obj_continue_pause</object>
+      </objects>
     </objects>
     <objects name="Obsticals">
       <object>objects\obj_crack</object>
-    </objects>
-    <objects name="lvl2_room">
-      <object>objects\obj_lvl2_house</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splashscreen</room>
     <room>rooms\rm_mainScroll</room>
     <room>rooms\rm_main</room>
-    <room>rooms\rm_options</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_tempwin</room>
     <room>rooms\rm_snowFight5</room>
@@ -234,6 +266,8 @@
       <room>rooms\rm_lvl_1</room>
       <room>rooms\rm_lvl_2</room>
     </rooms>
+    <room>rooms\rm_options</room>
+    <room>rooms\rm_deathScreen</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -5,7 +5,7 @@ if(point_distance(x, y, obj_player.x, obj_player.y) <= scareDistance){
 }
 
 
-if scared = false { //starts scared = false
+if (scared = false) { //starts scared = false
 
 //Wandering Script for abomidable snowman
 if(needPoint = true){   //Makes it keep from moving before it gets to point
