@@ -104,12 +104,16 @@
       <sprite>sprites\spr_continue_pause</sprite>
       <sprite>sprites\spr_restartLVL_pause</sprite>
     </sprites>
+    <sprites name="DeathScreen Stuff">
+      <sprite>sprites\spr_retryRoom</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background2</background>
     <background>background\bck_main</background>
     <background>background\bck_mainScroll</background>
     <background>background\bck_tempwin</background>
+    <background>background\bck_deathScreen</background>
     <background>background\bck_snowFight</background>
     <background>background\bck_optionsMenu</background>
     <background>background\bck_splashscreen</background>
@@ -181,6 +185,9 @@
       <objects name="lvl_2">
         <object>objects\obj_wall_lvl2</object>
         <object>objects\obj_lvl2_controller</object>
+        <objects name="lvl2_room">
+          <object>objects\obj_lvl2_house</object>
+        </objects>
       </objects>
     </objects>
     <objects name="LevelSelect">
@@ -225,8 +232,8 @@
     <objects name="Obsticals">
       <object>objects\obj_crack</object>
     </objects>
-    <objects name="lvl2_room">
-      <object>objects\obj_lvl2_house</object>
+    <objects name="Death Screen">
+      <object>objects\obj_retryRoom</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -238,6 +245,7 @@
     <room>rooms\rm_tempwin</room>
     <room>rooms\rm_snowFight5</room>
     <room>rooms\rm_snowFight</room>
+    <room>rooms\rm_deathScreen</room>
     <rooms name="Levels">
       <room>rooms\rm_levelSelect</room>
       <room>rooms\rm_lvl_1</room>
