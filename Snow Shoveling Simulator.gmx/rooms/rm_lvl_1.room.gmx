@@ -12,7 +12,14 @@
   <showcolour>0</showcolour>
   <code>global.murder = true;
 global.shootingsnowmen = true
-instance_create(0,0, obj_fadeIn);</code>
+
+instance_create(0,0, obj_fadeIn);
+
+//Win Controller Settings
+global.snowmanRunOnWinx = 1216
+global.snowmanRunOnWiny = -64
+global.wonlevel = false
+global.winWait = room_speed * 5</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -751,6 +758,15 @@ instance_create(0,0, obj_fadeIn);</code>
     <instance objName="obj_snowman" x="512" y="48" name="inst_5B338295" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snowman" x="592" y="128" name="inst_C3107A1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause_controller" x="160" y="176" name="inst_D738E021" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="160" name="inst_172F182A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="144" name="inst_78F1B0D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="128" name="inst_23404790" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="112" name="inst_774AC66B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="96" name="inst_09E880D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="80" name="inst_3B70782E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="64" name="inst_7FC35292" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="48" name="inst_3484A1D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_snow" x="1152" y="32" name="inst_1FF896D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

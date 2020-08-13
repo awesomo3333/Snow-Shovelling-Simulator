@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = global.winWait
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,41 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///change room
-global.nextroom = rm_levelSelect;
-instance_create(0,0, obj_fade);
-instance_destroy();
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Check Snow and set wonlevel
-
-if (instance_number(obj_snow) &lt;= 0) {
-    global.wonlevel = true
-    if(alarm[0] &lt; 0){
-        alarm[0] = global.winWait
-    }
-}
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -83,9 +72,8 @@ if (instance_number(obj_snow) &lt;= 0) {
           <argument>
             <kind>1</kind>
             <string>///Create You Won sprite
-if(global.wonlevel = true){
-    draw_sprite(spr_YouWin, 0, display_get_gui_width() / 2, display_get_gui_height() / 2)
-}
+      draw_sprite(spr_YouWin, 0, display_get_gui_width() / 2, display_get_gui_height() / 2)
+
 </string>
           </argument>
         </arguments>
